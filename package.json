@@ -1,6 +1,5 @@
 {
   "scripts": {
-    "build": "",
     "deploy": "npx wrangler deploy"
   }
 }
