@@ -1,5 +1,7 @@
 git submodule sync
 cd ./CyberChef/
-npx grunt prod
+npm ci --ignore-scripts
+npm run postinstall
+npm run build
 rm -rf ./build/prod/CyberChef_*.zip
 cd ../
