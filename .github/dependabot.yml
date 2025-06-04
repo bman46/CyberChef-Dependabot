@@ -1,0 +1,17 @@
+version: 2
+updates:
+  # The following keeps your fork in sync with the upstream repository (main repo)
+  - package-ecosystem: "gitsubmodule"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    # If you want to automatically open PRs when the upstream repo has new commits
+    # specify the upstream repo and branch
+    allow:
+      - dependency-type: "all"
+    # Set your upstream repository here; update with the actual upstream if different
+    source:
+      provider: "github"
+      owner: "gchq"
+      repo: "CyberChef"
+      branch: "main"
